@@ -1,0 +1,6 @@
+%h2= @item.title
+%p= @item.description
+
+=link_to "Zurück", root_path
+=link_to "Bearbeiten", edit_item_path
+=link_to "Löschen", item_path(@item), method: :delete, data:{ confirm: "Sicher?"}

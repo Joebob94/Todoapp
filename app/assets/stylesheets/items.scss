@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import 'bootstrap';
+html, body{height:100%;}
+
+a {color:black;}
+p {margin-bottom:25px;}
+.done{text-decoration: line-through;}
 
 .heading{padding:25px 0px 0px 0px; text-transform: uppercase;}
 hr {padding-bottom:25px;}
@@ -15,8 +20,14 @@ hr {padding-bottom:25px;}
 	background:#FBFBFB;
 	border-left:1px solid grey;
 	border-bottom:1px solid grey;
+	height:100%;
 }
+ 
+.content-wrapper
+	p {margin-bottom:50px;}
+.container {height:100%;}
 .btn-main {margin: 0 auto; margin-bottom: 15px; width:80%; height:50px;}
+
 
 //----- New Datei -----//
 

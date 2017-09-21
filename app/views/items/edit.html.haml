@@ -1,0 +1,15 @@
+%h2 Bearbeite den Post #{@item.id}
+
+= form_for @item do |f|
+	%p
+		= f.label :title
+		%br
+		= f.text_field :title
+		%br
+	%p
+		= f.label :description
+		%br
+		= f.text_area :description
+		%br
+	%p
+		= f.submit "Bearbeiten"
