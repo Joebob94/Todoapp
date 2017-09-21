@@ -1,6 +1,9 @@
 %h2= @item.title
 %p= @item.description
 
+-if @item.completed?
+	%p{:style => "color:red"} Erledigt
+
 =link_to "Zurück", root_path
 =link_to "Bearbeiten", edit_item_path
 =link_to "Löschen", item_path(@item), method: :delete, data:{ confirm: "Sicher?"}
