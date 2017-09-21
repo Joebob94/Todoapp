@@ -1,0 +1,14 @@
+%h1 Hier kann ein neuer Task angelegt werden.
+= form_for @item do |f|
+	%p
+		= f.label :title
+		%br
+		= f.text_field :title
+		%br
+	%p
+		= f.label :description
+		%br
+		= f.text_area :description
+		%br
+	%p
+		= f.submit "Posten"

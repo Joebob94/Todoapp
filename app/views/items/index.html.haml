@@ -1,0 +1,12 @@
+%h1{:class => "heading"}Deine To-Do's
+%hr
+
+.button-wrapper.text-center
+	%button{:type => "button", :class =>"btn btn-default btn-main"}
+		= link_to "Neuer Task", new_item_path
+
+.content-wrapper
+	- @items.each do |item|
+		%h2= item.title
+		%p= item.description
+		%p= link_to "Delete",  item, method: :delete, data: { confirm:"Sicher?"}

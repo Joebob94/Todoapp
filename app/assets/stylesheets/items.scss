@@ -1,0 +1,23 @@
+// Place all the styles related to the Items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap';
+
+.heading{padding:25px 0px 0px 0px; text-transform: uppercase;}
+hr {padding-bottom:25px;}
+.btn {background:lightblue; color:white;}
+.btn a {color:white;}
+
+.content-wrapper{
+	margin-left:15px; 
+	padding-left:10px;
+	padding-top: 10px; 
+	background:#FBFBFB;
+	border-left:1px solid grey;
+	border-bottom:1px solid grey;
+}
+.btn-main {margin: 0 auto; margin-bottom: 15px; width:80%; height:50px;}
+
+//----- New Datei -----//
+
+label {font-weight:bold;}
